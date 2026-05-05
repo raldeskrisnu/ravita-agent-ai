@@ -1,0 +1,28 @@
+# ─── Build artefacts ──────────────────────────────────────────────────────────
+/dev-agent/ravita-agent
+/dev-agent/*.exe
+
+# ─── Environment / secrets ────────────────────────────────────────────────────
+# Keep the actual .env out of source control; only commit .env.example
+dev-agent/.env
+py-agent/.env
+
+# ─── Go module cache / test artefacts ─────────────────────────────────────────
+*.test
+*.out
+coverage.out
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ─── macOS / IDE ──────────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
